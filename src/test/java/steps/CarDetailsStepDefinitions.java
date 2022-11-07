@@ -25,7 +25,7 @@ public class CarDetailsStepDefinitions {
     }
 
     @Then("^get reg numbers and verify make and model on text file through carzoo site$")
-    public void verifyCarDetailsTest() throws IOException, InterruptedException {
+    public void verifyCarDetailsTest() throws IOException {
         valueMyCarPage.getRegAndverifyCarDetails(driver);
     }
 

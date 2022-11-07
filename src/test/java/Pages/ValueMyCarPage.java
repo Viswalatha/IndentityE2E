@@ -1,5 +1,4 @@
 package Pages;
-import net.serenitybdd.core.pages.PageObject;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +9,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 
-public class ValueMyCarPage extends PageObject {
+public class ValueMyCarPage {
 
     CarDetails carDetails = new CarDetails();
     
@@ -31,7 +30,7 @@ public class ValueMyCarPage extends PageObject {
     By errorMessage = By.xpath("//*[@id='your-registration-number-form']/div/div[1]/span");
 
 
-    public void getRegAndverifyCarDetails(WebDriver driver) throws IOException, InterruptedException {
+    public void getRegAndverifyCarDetails(WebDriver driver) throws IOException {
 
         driver.findElement(acceptCookies).click();
 
